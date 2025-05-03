@@ -21,8 +21,8 @@ public class Estoque {
     @OneToOne
     @JoinColumn(name = "produto_id", nullable = false)
     private Produto produto;   
-    public Estoque(Produto produto, int quantidade) {
-        this.produto = produto;
+    public Estoque( Long id,int quantidade) {
+        this.id = id;
         this.quantidade = quantidade;
     }
     public Long getId() {
